@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card" style="max-width: 650px;">
+
+            <h1>Blog Dashboard</h1>
+            <p class="subtitle" id="welcomeMsg">Welcome!</p>
+
+            <form id="createBlogForm">
+                <div class="form-group">
+                    <label>Blog Title</label>
+                    <input type="text" id="blogTitle" placeholder="Enter blog title" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Blog Content</label>
+                    <textarea id="blogContent" placeholder="Write your blog here..." required
+                    style="width:100%; min-height:120px; padding:12px; border:1px solid #d1d5db; border-radius:8px;"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Create Blog</button>
+                <p id="blogMessage" class="error-msg"></p>
+            </form>
+
+            <hr style="margin:25px 0;">
+
+            <h2 style="margin-bottom:20px;">All Blogs</h2>
+            <div id="blogsList"></div>
+
+            <button id="logoutBtn" class="btn-primary" style="margin-top:25px;">
+                Logout
+            </button>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
